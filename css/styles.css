@@ -67,7 +67,8 @@ section {
 
 .header{
     background-color: var(--white-color);
-    border: 1px solid #ECECEC;;
+    border: 1px solid #ECECEC;
+    padding: 24px 0;
 }
 
 .header .logo {
@@ -126,7 +127,6 @@ margin-right: 50px;
 .header-nav{
 display: flex;
     align-items: center;
-    padding: 25px 0;
 }
 
 .header nav{
@@ -136,20 +136,19 @@ display: flex;
 .site-nav{
     display: flex;
     align-items: center;
-    padding: 30px 0;
+    
 }
 .contact{
     display: flex;
         align-items: center;
         margin-left: auto;
-        padding: 30px 0;
 }
 
 /*Hero btn*/
 
 .hero {
     padding: 200px 0;
-    background: var(--block-color)
+    background-color: var(--block-color);
 }
 
 .hero-tittle {
@@ -167,6 +166,8 @@ display: flex;
 }
 
 .hero .button {
+    border: none;
+    border-radius: 4px;
 padding: 10px 30px;
 margin: 0 auto;
 display: flex;
@@ -198,6 +199,10 @@ align-items: center;
     display: flex;
 }
 
+.feature .item{
+    width: 270px;
+}
+
 .feature .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -219,8 +224,11 @@ align-items: center;
 
 /*Examples index*/
 
+.examples{
+    padding-top: 0;
+}
+
 .examples-tittle{
-    padding-top: 120px;
         margin-bottom: 50px;
         text-align: center;
 }
@@ -237,19 +245,16 @@ align-items: center;
 
 
 .examples-tittle {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     color: var(--title-color)
 
 }
 
 /*Team */
 
-.team .container{
+.team{
     background-color: var(--back-buttons-color);
-    height: 648px;
     text-align: center;
      
 }
@@ -257,6 +262,7 @@ align-items: center;
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        padding: 30px;
         
 }
 
@@ -271,16 +277,13 @@ align-items: center;
 }
 
 .team-tittle {
-    padding-top: 95px;
     margin-bottom: 50px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--title-color);
 }
 
 .subtitle {
-    padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
@@ -296,8 +299,6 @@ align-items: center;
 
 /*Portfolio btn*/
 
-
-
 .filtr.list{
     display: flex;
      align-items: center;
@@ -306,16 +307,22 @@ align-items: center;
     
 }
 
+
 .filtr.list li:not(:nth-child(5n)) {
-    margin-right: 30px;}
+    margin-right: 8px;}
+        
 
 .filtr .button {
+    border: none;
+        border-radius: 4px;
+    
     padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     background: var(--back-buttons-color);
     color: var(--title-color);
+
     
 
     cursor: pointer;
@@ -323,6 +330,7 @@ align-items: center;
 .filtr .button .current {
     background-color: var(--accent-color);
     color: var(--white-color);
+    
 }
 
 .filtr .current {
@@ -344,6 +352,7 @@ align-items: center;
 .our-works{
     background: var(--white-color);
         border: 1px solid #EEEEEE;
+        padding: 20px 24px;
 }
 
 .works.list{
@@ -367,9 +376,7 @@ align-items: center;
 /*Portfolio*/
 
 .subtitle-portfolio {
-    margin-top: 30px;
     margin-bottom: 5px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -384,18 +391,11 @@ align-items: center;
 
 /* Footer*/
 
-.fix{
-    margin-top: 10px;
-}
-
-.fixs{
-    margin-top: 20px
-}
 
  .page-footer{
-    background: var(--block-color);
+    background-color: var(--block-color);
         padding-top: 60px;
-        padding-left: 215px;
+        padding-bottom: 60px;
     
 }
 
@@ -406,6 +406,7 @@ align-items: center;
     font-size: 26px;
     line-height: 1.19;
     
+    
 }
 
 .footer-logo span {
@@ -414,11 +415,24 @@ align-items: center;
 
     .adress{
         font-style: normal;
+        
     }
+
+    .block {
+        margin-top: 20px;
+    }
+
+    .block .fix:not(:first-child){
+       
+                margin-top: 10px;
+            
+    }
+
     
 .block-maps {
     line-height: 1.71;
     color: var(--white-color);
+    
     
 }
 
