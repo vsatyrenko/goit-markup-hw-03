@@ -187,8 +187,18 @@ align-items: center;
 }
 
 /* Features */ 
-.hide {
-    display: none;
+.visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 .feature .container {
@@ -362,8 +372,14 @@ align-items: center;
 
 .works.list li:not(:nth-child(3n)) {
     margin-right: 30px;
+    
+}
+
+
+.works.list li:nth-child(-n + 6){
     margin-bottom: 30px;
 }
+
 
 .works .text{
     font-size: 16px;
