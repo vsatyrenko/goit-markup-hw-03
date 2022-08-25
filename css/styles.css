@@ -431,12 +431,9 @@ align-items: center;
 
     .adress{
         font-style: normal;
-        
-    }
-
-    .block {
         margin-top: 20px;
     }
+
 
     .block .fix:not(:first-child){
        
